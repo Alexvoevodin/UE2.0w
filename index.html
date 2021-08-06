@@ -11,7 +11,14 @@
      font-family: 'Roboto';
      src: url(assets/fonts/Roboto/Roboto-Regular.ttf);
     }
-   </style>
+  </style>
+
+  <style>
+    @font-face {
+      font-family: 'Roboto-bold';
+      src: url(assets/fonts/Roboto/Roboto-Bold.ttf);
+    }
+  </style>
 
   <link rel="stylesheet" href="assets/css/normalize.css">
   <link rel="stylesheet" href="css/reset.css">
@@ -20,6 +27,8 @@
 </head>
 <body>
   
+<!--      HEADER      -->
+
   <header class="header">
     <div class="container header__content">
       <a href="" class="header__logo">
@@ -42,9 +51,47 @@
     </div>
   </header>
 
-  <section class="restaurants">
-    a
+<!--      HEADER      -->
+
+
+
+<!--      SEARCH       -->
+
+  <section class="search">
+    <div class="container">
+      <input type="search" name="search" id="" class="search__field" placeholder="Поиск по ресторанам и кухням">
+    </div>
   </section>
+
+  <!--      SEARCH       -->
+
+
+
+  <!--      SEARCH       -->
+
+  <section class="restaurants">
+    <div class="container">
+      <h1 class="restaurants__title">
+        Рестораны в Москве
+      </h1>
+      <div class="restaurants__items">
+        <div class="restaurant__item">
+          <img src="img/rest/1mac.jpg" alt="McDonalds" class="restaurant__img">
+          <h6 class="restaurant__title">
+            Макдоналдс — Газетный
+          </h6>
+          <p class="restaurant__price">
+           <span class="restaurant__price-count">₽₽</span> • Бургеры
+          </p>
+          <p class="restaurant__time">
+            25 - 35 мин
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--      SEARCH       -->
 
   <script src="js/main.js"></script>
 </body>

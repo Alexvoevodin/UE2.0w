@@ -2,6 +2,7 @@
 *::after,
 *::before {
     box-sizing: border-box;
+    transition: all ease-in-out .4s;
 }
 
 body {
@@ -16,16 +17,34 @@ button {
     background: none;
 }
 
+button:active, 
+button:focus, 
+input:active, 
+input:focus,
+a:focus,
+a:active {
+    outline: none;
+    border-bottom: 1px solid #57AD56;
+}
+
+input::-webkit-input-placeholder { 
+    color: #E0E0E0;
+}
+
 .container {
     max-width: 956px;
     margin: 0 auto;
 }
+
+
+/* HEADER */
 
 .header {
     position: sticky;
     top: 0;
     padding-top: 16px;
     padding-bottom: 16px;
+    margin-bottom: 56px;
     box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
 }
 
@@ -45,12 +64,11 @@ button {
     border: 1px solid #E0E0E0;
     border-radius: 2px;
     padding: 10px 20px;
+    font-family: 'Roboto-bold', sans-serif;
 
     font-weight: 500;
     font-size: 13px;
     line-height: 24px;
-
-    transition: all ease-in-out .5s;
 }
 
 .header__login-button:hover {
@@ -59,14 +77,75 @@ button {
 }
 
 .header__login-cart {
-    padding-left: 27px;
-}
-
-.header__login-svg path {
-    transition: all ease-in-out .5s;
+    margin-left: 27px;
 }
 
 .header__login-svg:hover path {
     fill: #57AD56;
 }
 
+
+/*  */
+
+
+@media screen and (max-width: 956px) {
+    .container {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 751px) {
+    .header__login-cart {
+        display: none;
+    }
+}
+
+/* HEADER */
+
+
+
+/* SEARCH */
+
+.search__field {
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #E0E0E0;
+
+    line-height: 20px;
+    font-size: 18px;
+
+    margin-bottom: 56px;
+}
+
+/* SEARCH */
+
+
+
+/* SEARCH */
+
+.restaurants__title {
+    font-size: 22px;
+    line-height: 34px;
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.restaurant__img {
+    margin-bottom: 16px;
+}
+
+.restaurant__title {
+    margin-bottom: 4px;
+}
+
+.restaurant__price {
+    margin-bottom: 4px;
+
+    font-size: 22px;
+    line-height: 34px;
+}
+
+/* SEARCH */
