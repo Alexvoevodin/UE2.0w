@@ -1,0 +1,72 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #1D1D1D;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+.container {
+    max-width: 956px;
+    margin: 0 auto;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.header__login {
+    display: flex;
+    align-items: center;
+}
+
+.header__login-button {
+    border: 1px solid #E0E0E0;
+    border-radius: 2px;
+    padding: 10px 20px;
+
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 24px;
+
+    transition: all ease-in-out .5s;
+}
+
+.header__login-button:hover {
+    background: #57AD56;
+    color: #fff;
+}
+
+.header__login-cart {
+    padding-left: 27px;
+}
+
+.header__login-svg path {
+    transition: all ease-in-out .5s;
+}
+
+.header__login-svg:hover path {
+    fill: #57AD56;
+}
+
