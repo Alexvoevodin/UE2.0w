@@ -347,3 +347,31 @@ input::-webkit-input-placeholder {
 }
 
 /* BUTTON UP */
+
+
+
+
+/* PUSHKIN */
+
+
+
+/* SLIDER */
+
+.slider {
+    background-image: url(../img/pushkin/slider-bg.jpg);
+    background-size: cover;
+}
+
+.slider__card {
+    width: 389px;
+    height: 204px;
+    background-color: #fff;
+}
+
+.slider__card-title {
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+/* SLIDER */
