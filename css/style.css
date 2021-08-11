@@ -357,15 +357,30 @@ input::-webkit-input-placeholder {
 
 /* SLIDER */
 
+.pushkin__header {
+    margin: 0;
+}
+
 .slider {
     background-image: url(../img/pushkin/slider-bg.jpg);
     background-size: cover;
 }
 
+.slider__content {
+    padding: 80px 0;
+}
+
 .slider__card {
+    display: flex;
     width: 389px;
     height: 204px;
     background-color: #fff;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
+    border-radius: 2px;
 }
 
 .slider__card-title {
@@ -374,4 +389,40 @@ input::-webkit-input-placeholder {
     line-height: 42px;
 }
 
+.slider__card-info {
+    display: flex;
+    align-items: center;
+}
+
+.restaurant__price-pushkin {
+    padding-right: 110px;
+    margin: 0;
+}
+
+.restaurant__time-pushkin {
+    margin: 0;
+    background: #262626;
+    border-radius: 16px;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    padding: 9px 17px;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 398px) {
+    .slider__content {
+        padding: 80px 5px;
+    }
+
+    .slider__card {
+        width: auto;
+    }
+
+    .slider__card-info {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
 /* SLIDER */
