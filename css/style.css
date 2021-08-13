@@ -464,6 +464,61 @@ input::-webkit-input-placeholder {
     padding-right: 40px;
 }
 
+.food__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.food__cards-item {
+    display: flex;
+    margin-bottom: 50px;
+    border: 1px solid rgba(117, 117, 117, 0.2);
+    border-radius: 2px;
+}
+
+.food__cards-item:hover {
+    background-color: #f1f1f1;
+}
+
+.food__cards-item:hover .food__cards-item__info {
+    display: inline;
+}
+
+.food__cards-item__descr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.food__cards-item__title {
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #1D1D1D;
+}
+
+.food__cards-item__info {
+    display: none;
+    font-size: 13px;
+    line-height: 21px;
+
+    color: #626262;
+}
+
+.food__cards-item__price {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 21px;
+
+    color: #1D1D1D;
+}
+
+.food__cards-item__img {
+    margin-left: 24px;
+}
+
 /* MENU */
 
 
