@@ -417,6 +417,7 @@ input::-webkit-input-placeholder {
 
     .slider__card {
         width: auto;
+        transform: translateY(130px);
     }
 
     .slider__card-info {
@@ -424,5 +425,48 @@ input::-webkit-input-placeholder {
         align-items: center;
         justify-content: center;
     }
+
+    .restaurant__price-pushkin {
+        padding: 10px;
+    }
+
+    .slider__card-title {
+        font-size: 28px;
+        line-height: 24px;
+    }
 }
 /* SLIDER */
+
+
+
+/* MENU */
+
+.menu {
+    height: 80px;
+    border: 1px solid rgba(117, 117, 117, 0.2);
+}
+
+@media screen and (max-width: 398px) {
+    .menu {
+        margin-top: 60px;
+        border: none;
+    }
+}
+
+.menu__list {
+    margin: 27px 0;
+}
+
+.menu__list-item {
+    font-size: 16px;
+    line-height: 19px;
+    color: #626262;
+    padding-right: 40px;
+}
+
+/* MENU */
+
+
+
+/* FOOD */
+/* FOOD */
